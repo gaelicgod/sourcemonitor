@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<h1>Source Control Login</h1>
+{% if error %}
+    <p>{{error}}</p>
+{% endif %}
+    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+        <div class="login">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" placeholder="John.Doe" value="">
+        </div>
+        <div class="pass">
+            <label for="pass">Password</label><br>
+            <input type="password" name="password" id="pass" value="">
+        </div>
+
+        <button type="submit">login</button>
+            
+    </form>
+</body>
+</html>
